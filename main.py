@@ -3,7 +3,12 @@ def main():
     text = get_book_text(book_path)
     num_words = get_num_words(text)
     chars_dict = get_chars_dict(text)
-    print(chars_dict)
+    
+    print("--- Begin report of books/frankenstein.txt ---")
+    print(f"{num_words} words found in the document\n")
+    for char in chars_dict:
+        print(f"The '{char}' character was found {chars[char]} times")
+    print("--- End report ---")
 
 def get_num_words(text):
     words = text.split()
