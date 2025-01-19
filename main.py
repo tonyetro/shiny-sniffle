@@ -7,7 +7,7 @@ def main():
     print("--- Begin report of books/frankenstein.txt ---")
     print(f"{num_words} words found in the document\n")
     for char in chars_dict:
-        print(f"The '{char}' character was found {chars[char]} times")
+        print(f"The '{char}' character was found {chars_dict[char]} times")
     print("--- End report ---")
 
 def get_num_words(text):
