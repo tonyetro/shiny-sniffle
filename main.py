@@ -18,6 +18,8 @@ def get_chars_dict(text):
     chars = {}
     for c in text:
         lowered = c.lower()
+        if lowered.isalpha() == False:
+            continue
         if lowered in chars:
             chars[lowered] += 1
         else:
